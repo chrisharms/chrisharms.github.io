@@ -42,6 +42,11 @@
             this.age = age;
             this.weight = weight;
         }
+        // creating object and adding attributes
+        var doggo = new Object();
+        doggo.breed = "help";
+        doggo.country = "Australia";
+
 
         function btn_click() {
             var doggy = new dogMaker("Fido","Lab",3,55.3);
@@ -53,6 +58,12 @@
             dogP.innerHTML = "name: " + doggy.getName() + "\n" + "Breed: " + doggy.getBreed() + "\n"
                 + "Age: " + doggy.getAge() + "\n" + "Weight: " + doggy.getWeight();
             doggy.honk();
+
+            var array = new Array();
+            var array2 = [];
+            array.push("hello");
+            array.push(undefined);
+            alert(array2);
         }
 
     </script>
