@@ -2,10 +2,44 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    
     <title>JavaScript Test</title>
+    <script>
+        class dog {
+            
+            constructor(name, breed, age, weight) {
+                var name = name;
+                var breed = breed;
+                var age = age;
+                var weight = weight;
+                
+                this.getName = function() {
+                    return name;
+                };
+                this.getBreed = function() {
+                    return breed;
+                };
+                this.getAge = function() {
+                    return age;
+                };
+                this.getWeight = function() {
+                    return weight;
+                };
+            }
+        }
+
+        function btn_click() {
+            var doggy = new dog("Fido","Lab",3,55.3);
+            alert("name: " + doggy.getName() + "\n" + "Breed: " + doggy.getBreed() + "\n"
+                + "Age: " + doggy.getAge() + "\n" + "Weight: " + doggy.getWeight());
+        }
+
+        var button = document.getElementById("btn");
+        button.onclick(btn_click());
+        
+    </script>
 </head>
 <body>
     <h1>I am testing JavaScript</h1>
+    <input id="btn" type="button" value="Show Dog Object">
 </body>
 </html>
