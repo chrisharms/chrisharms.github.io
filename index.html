@@ -31,15 +31,17 @@
             var doggy = new dog("Fido","Lab",3,55.3);
             alert("name: " + doggy.getName() + "\n" + "Breed: " + doggy.getBreed() + "\n"
                 + "Age: " + doggy.getAge() + "\n" + "Weight: " + doggy.getWeight());
+            
+            var dogP = document.getElementById("showDog");
+            dogP.innerHTML = "name: " + doggy.getName() + "\n" + "Breed: " + doggy.getBreed() + "\n"
+                + "Age: " + doggy.getAge() + "\n" + "Weight: " + doggy.getWeight();
         }
-
-        var button = document.getElementById("btn");
-        button.onclick(btn_click());
 
     </script>
 </head>
 <body>
     <h1>I am testing JavaScript</h1>
     <input id="btn" type="button" value="Show Dog Object" onclick="btn_click()">
+    <p id="showDog"></p>
 </body>
 </html>
