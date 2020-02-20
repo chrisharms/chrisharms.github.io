@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>JavaScript Test</title>
     <script>
+        // Creating whole class
         class dog {
             
             constructor(name, breed, age, weight) {
@@ -26,12 +27,20 @@
                 };
             }
         }
+        // Just creating constructor
+        function dogMaker (name,breed,age,weight) {
+            this.name = name;
+            this.breed = breed;
+            this.age = age;
+            this.weight = weight;
+        }
 
         function btn_click() {
-            var doggy = new dog("Fido","Lab",3,55.3);
-            alert("name: " + doggy.getName() + "\n" + "Breed: " + doggy.getBreed() + "\n"
-                + "Age: " + doggy.getAge() + "\n" + "Weight: " + doggy.getWeight());
-            
+            var doggy = new dogMaker("Fido","Lab",3,55.3);
+            alert("name: " + doggy.name + "\n" + "Breed: " + doggy.breed + "\n"
+                + "Age: " + doggy.age + "\n" + "Weight: " + doggy.weight);
+                
+            doggy = new dog("idiot","Golden", 12, 230);
             var dogP = document.getElementById("showDog");
             dogP.innerHTML = "name: " + doggy.getName() + "\n" + "Breed: " + doggy.getBreed() + "\n"
                 + "Age: " + doggy.getAge() + "\n" + "Weight: " + doggy.getWeight();
