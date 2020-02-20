@@ -7,12 +7,16 @@
         // Creating whole class
         class dog {
             
-            constructor(name, breed, age, weight) {
+            constructor(name, breed, age, weight, city, state) {
                 var name = name;
                 var breed = breed;
                 var age = age;
                 var weight = weight;
-                
+                var address = {
+                    city: city,
+                    state: state
+                }
+
                 this.getName = function() {
                     return name;
                 };
@@ -25,6 +29,10 @@
                 this.getWeight = function() {
                     return weight;
                 };
+            }
+
+            honk() {
+                alert("Beep Beep!");
             }
         }
         // Just creating constructor
@@ -44,6 +52,7 @@
             var dogP = document.getElementById("showDog");
             dogP.innerHTML = "name: " + doggy.getName() + "\n" + "Breed: " + doggy.getBreed() + "\n"
                 + "Age: " + doggy.getAge() + "\n" + "Weight: " + doggy.getWeight();
+            doggy.honk();
         }
 
     </script>
