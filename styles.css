@@ -8,16 +8,16 @@ body, .card {
 .navbar, .footer, .navbar-container {
   background-color: #1F4994;
 }
-.navbar {
-  padding-left: 0;
-  padding-right: 0;
-}
 .footer-title {
   padding-top: 1%;
   padding-bottom: 0.5%;
 }
 .footer-list {
   padding-bottom: 1%;
+}
+.navbar {
+  padding-left: 4%;
+  padding-right: 4%;
 }
   #navbarNavAltMarkup {
     margin-left: 1%;
