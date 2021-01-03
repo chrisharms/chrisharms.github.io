@@ -1,4 +1,24 @@
-
+body, .card {
+  background-color: #181818;
+  color: white;
+}
+.jumbotron {
+  background-color: #131313;
+}
+.navbar, .footer, .navbar-container {
+  background-color: #1F4994;
+}
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+.footer-title {
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+}
+.footer-list {
+  padding-bottom: 1%;
+}
   #navbarNavAltMarkup {
     margin-left: 1%;
   }
